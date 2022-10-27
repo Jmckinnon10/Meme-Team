@@ -1,0 +1,13 @@
+body {
+  text-align: center;
+}
+
+#meme-image {
+  align-items: center;
+}
+
+img {
+  max-width:40%;
+  height:auto;
+  align-items: center;
+}
