@@ -1,6 +1,8 @@
 body {
   text-align: center;
-  
+  background: linear-gradient(rgba(5, 144, 243, 0.1),
+  rgba(6, 137, 237, 0.1)),
+ url('https://emojipedia-us.s3.amazonaws.com/social/emoji/face-with-tears-of-joy.png'); 
 }
 
 #meme-image {
@@ -13,3 +15,6 @@ img {
   align-items: center;
 }
 
+h1 {
+  color: rgb(211, 36, 36);
+}
