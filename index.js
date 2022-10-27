@@ -32,6 +32,7 @@ fetch(' http://localhost:3000/memes')
   .then(resp => resp.json())
   .then(localMemes => {
     renderMemes(localMemes)
+
   })
 
 function renderMemes(localMemes){
@@ -47,19 +48,19 @@ function renderImages(memes) {
   
   memeName.textContent = memes.name
   localImage.src = memes.image
-  console.log(li.src)
+  console.log(localImage.src)
   li.append(localImage)
   ul.append(memeName,li)
 
-  form.addEventListener('submit', e => {
-    e.preventDefault()
-    const newImage = e.target[0].value
-    localImage.src = newImage
-    
-  })
 }
 
-
+form.addEventListener('submit', e => {
+  e.preventDefault()
+  const newImage = {
+    image: e.target[0].value
+  }
+    renderImages(newImage)
+})
 
 
 
