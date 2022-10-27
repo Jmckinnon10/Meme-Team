@@ -1,5 +1,6 @@
 body {
   text-align: center;
+  
 }
 
 #meme-image {
@@ -11,3 +12,4 @@ img {
   height:auto;
   align-items: center;
 }
+
