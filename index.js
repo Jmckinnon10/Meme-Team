@@ -43,16 +43,26 @@ function renderMemes(localMemes){
   
 
 function renderImages(memes) {
-  console.log(memes)
+  //console.log(memes)
   const localImage = document.createElement('img')
   const memeName = document.createElement('h3')
   
   memeName.textContent = memes.name
   localImage.src = memes.image
-  console.log(localImage.src)
-  //li.append(localImage)
+ //console.log(localImage.src)
   imageCollection.append(imageCard)
   imageCard.append(memeName, localImage)
+
+    imageCard.addEventListener('mouseover', () => {
+      localImage.style.transform = "scale(2.5)";
+      localImage.style.transition = "transform 1s ease";
+    imageCard.addEventListener('mouseout', () => {
+      localImage.style.transform = "scale(1)";
+      localImage.style.transition =
+        "transform 1s ease";
+      localImage.style=""
+  })
+  })
 }
 
 form.addEventListener('submit', e => {
@@ -62,3 +72,4 @@ form.addEventListener('submit', e => {
   }
     renderImages(newImage)
 })
+

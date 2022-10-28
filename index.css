@@ -1,8 +1,13 @@
 body {
   text-align: center;
-  /* background: linear-gradient(rgba(5, 144, 243, 0.1),
+  background: linear-gradient(rgba(5, 144, 243, 0.1),
   rgba(6, 137, 237, 0.1)),
- url('https://emojipedia-us.s3.amazonaws.com/social/emoji/face-with-tears-of-joy.png');  */
+ url('https://t4.ftcdn.net/jpg/04/39/19/81/360_F_439198179_5Em8OK6oUd81Chsbi60BrYQk0JdCDDR9.jpg'); 
+}
+#add:hover {
+  background-color: gray;
+  transition: .3s;
+  cursor: pointer;
 }
 
 #meme-image {
@@ -38,4 +43,8 @@ img {
 
 h1 {
   color: rgb(236, 10, 10);
+}
+
+button {
+  color: blue;
 }
