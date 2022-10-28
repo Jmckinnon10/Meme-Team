@@ -3,17 +3,30 @@ body {
   background: linear-gradient(rgba(5, 144, 243, 0.1),
   rgba(6, 137, 237, 0.1)),
  url('https://t4.ftcdn.net/jpg/04/39/19/81/360_F_439198179_5Em8OK6oUd81Chsbi60BrYQk0JdCDDR9.jpg'); 
+ height: 125vh;
+  min-height: 400px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #343a40;
 }
+
+
+
 #add:hover {
   background-color: gray;
   transition: .3s;
   cursor: pointer;
 }
-
-#meme-image {
-  align-items: center;
+#random-meme:hover {
+  background-color: gray;
+  transition: .3s;
+  cursor: pointer;
 }
-#collection {
+
+
+#card {
 width: 35rem;
 
 display: inline-block;
@@ -21,16 +34,12 @@ margin: 1rem;
 /* margin-left: 2%;
 margin-right: 2%; */
 outline: ridge;
-outline-color: rgb(255, 0, 0);
+outline-color: rgb(22, 193, 162);
 outline-width: 10px;
 border-radius: 2%;
 }
-
-#card {
-  width: 22rem;
-  border: grey solid 1px;
+#collection {
   display: inline-block;
-  margin: 1rem;
 }
 
 img {
@@ -41,10 +50,51 @@ img {
 }
 
 
-h1 {
-  color: rgb(236, 10, 10);
+span {
+  font-family:'Comic Sans MS', sans-serif;
+  font-size: xx-large;
+  color: rgb(5, 1, 1);
+  border: 5px solid rgb(22, 193, 162);
+  border-radius: 10px;
+
+}
+
+#image {
+ height: auto;
+ width: auto;
+}
+
+#url {
+  font-size: small;
+  color: rgb(5, 1, 1);
+  border: 5px solid rgb(22, 193, 162);
+  border-radius: 10px;
 }
 
 button {
-  color: blue;
+  
+  color: rgb(0, 0, 0);
+  border: 3px solid rgb(22, 193, 162);
+  border-radius: 70%;
+}
+
+img {
+  color: rgb(0, 0, 0);
+  border: 3px solid rgb(22, 193, 162);
+  border-radius: 5px;
+}
+
+p {
+  font-size: large;
+  color: rgb(0, 0, 0);
+  border: 3px solid rgb(22, 193, 162);
+  border-radius: 10px;
+}
+
+h3 {
+   color: rgb(22, 193, 162);
+}
+
+h2 {
+  size: large;
 }
