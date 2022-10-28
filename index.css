@@ -1,13 +1,71 @@
 body {
   text-align: center;
+  /* background: linear-gradient(rgba(5, 144, 243, 0.1),
+  rgba(6, 137, 237, 0.1)),
+ url('https://emojipedia-us.s3.amazonaws.com/social/emoji/face-with-tears-of-joy.png');  */
 }
 
 #meme-image {
   align-items: center;
+}
+#collection {
+width: 35rem;
+
+display: inline-block;
+margin: 1rem;
+/* margin-left: 2%;
+margin-right: 2%; */
+outline: ridge;
+outline-color: rgb(22, 193, 162);
+outline-width: 10px;
+border-radius: 2%;
+}
+
+#card {
+  width: 22rem;
+  border: grey solid 1px;
+  display: inline-block;
+  margin: 1rem;
 }
 
 img {
   max-width:40%;
   height:auto;
   align-items: center;
+  
+}
+
+
+span {
+  font-size: xx-large;
+  color: rgb(5, 1, 1);
+  border: 5px solid rgb(22, 193, 162);
+  border-radius: 10px;
+
+}
+
+#url {
+  font-size: medium;;
+  color: rgb(5, 1, 1);
+  border: 5px solid rgb(22, 193, 162);
+  border-radius: 10px;
+}
+
+button {
+  
+  color: rgb(0, 0, 0);
+  border: 3px solid rgb(22, 193, 162);
+  border-radius: 70%;
+}
+
+img {
+  color: rgb(0, 0, 0);
+  border: 3px solid rgb(22, 193, 162);
+  border-radius: 5px;
+}
+
+p {
+  color: rgb(0, 0, 0);
+  border: 3px solid rgb(22, 193, 162);
+  border-radius: 10px;
 }
