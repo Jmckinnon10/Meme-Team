@@ -64,3 +64,26 @@ form.addEventListener('submit', e => {
 })
 
 
+let copyText  = document.querySelector('.copy-text');
+copyText.querySelector('button').addEventListener('click', function(){
+  let input = copyText.querySelector('input.text');
+  input.select();
+  document.execCommand("copy");
+  copyText.classList.add('active');
+  window.getSelection().removeAllRanges();
+  setTimeout(function() {
+    copyText.classList.remove('active')
+  },2500)
+})
+
+{/* <div class="container">
+    <div class="label">
+        Joining Link
+    </div>
+    <div class="copy-text">
+        <input type="text" class="text" value="https://fileshare.io/000-000-000">
+        <button>
+            <i class="fa fa-clone"></i>
+        </button>
+    </div>
+</div> */}
