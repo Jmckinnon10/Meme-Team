@@ -3,8 +3,10 @@ const API = 'https://api.imgflip.com/get_memes'
 const memeButton = document.querySelector('#random-meme')
 memeButton.textContent = "RANDOMIZE"
 const inputs = document.querySelectorAll('.box')
-const ul = document.querySelector('#top-memes')
 const form = document.querySelector('#meme-content')
+const imageCollection = document.querySelector('#collection')
+const imageCard = document.createElement('div')
+imageCard.id = 'card'
 
   fetch(API)
     .then(resp => resp.json())
@@ -42,16 +44,15 @@ function renderMemes(localMemes){
 
 function renderImages(memes) {
   console.log(memes)
-  const li = document.createElement('li')
   const localImage = document.createElement('img')
   const memeName = document.createElement('h3')
   
   memeName.textContent = memes.name
   localImage.src = memes.image
   console.log(localImage.src)
-  li.append(localImage)
-  ul.append(memeName,li)
-
+  //li.append(localImage)
+  imageCollection.append(imageCard)
+  imageCard.append(memeName, localImage)
 }
 
 form.addEventListener('submit', e => {
@@ -61,6 +62,3 @@ form.addEventListener('submit', e => {
   }
     renderImages(newImage)
 })
-
-
-
