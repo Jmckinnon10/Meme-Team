@@ -64,6 +64,7 @@ function renderImages(memes) {
 
 form.addEventListener('submit', e => {
   e.preventDefault()
+ 
   const newImage = {
     name: e.target[0].value,
     image: e.target[1].value

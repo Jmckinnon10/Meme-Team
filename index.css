@@ -59,9 +59,14 @@ span {
 
 }
 
+#memeImage {
+  height: 50px;
+  width: 50px;
+}
+
 #image {
- height: auto;
- width: auto;
+ height: 300px;
+ width: 300px;
 }
 
 #url {
@@ -96,5 +101,5 @@ h3 {
 }
 
 h2 {
-  size: large;
+  font-size: xx-large;
 }
